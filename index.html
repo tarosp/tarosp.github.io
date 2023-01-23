@@ -25,34 +25,21 @@
         <a class="nav-link" href="art.html">Art</a>
       </li>
     </ul>
+    <a class="navbar-brand ml-auto title" href="#">Taro Spirig</a>
   </nav>
 
 <div class="container-fluid content">
 
-  <div class="row margins_lr">
-    <div class="offset-sm-7 offset-md-7 offset-lg-10 offset-xl-10" id="firstel">
-      <h1>
-        Taro Spirig
-      </h1>
-    </div>
-  </div>
-
-
   <div class="row margins_lr" id="portrait">
-    <div class=" col-sm-12 col-md-12 col-lg-4 col-xl-4 offset-lg-8 offset-xl-8">
+    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
       <img class="img-responsive" src="./Images/Portrait.jpg" alt="QuietlyTurning" width="90%">
     </div>
-  </div>
 
-
-  <hr>
-  <div class="row margins_lr">
-    <h3>
+    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+    <h3 id="about">
       About
     </h3>
-  </div>
 
-  <div class="row margins_lr">
     <p>
       I am currently supported by a scholarship of the Hasler foundation to conduct research in quantum information and quantum complexity theory under the supervision of Prof. Anand Natarajan at MIT.
     </p>
@@ -69,6 +56,7 @@
     <p>
       In parallel to my scientific interests, I have always developed some of my artistic interests, including cinema, photography, painting and digital art. You can read more about what I have done in these areas in the Art section of this website.
     </p>
+    </div>
   </div>
 
   <hr>
@@ -89,6 +77,17 @@
 <footer>Last update January 2023</footer>
 
   <style>
+
+    .title{
+      color: black !important;
+      font-family: "Arial", sans-serif;
+      font-size: xx-large !important;
+    }
+
+    #about{
+      margin-top: 2em;
+    }
+
     p{
       margin: 10px 0 !important;
     }
@@ -122,14 +121,9 @@
       margin-bottom:5em;
     }
 
-    #firstel{
-      margin-top: 1em;
-      position:fixed !important;
-      z-index:2 !important;
-    }
 
     #portrait{
-      margin-top:5em;
+      margin-top:7em;
     }
 
     footer {
