@@ -1,123 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taro Spirig</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="Taro Spirig">
-	<meta name="author" content="Taro Spirig">
-  <!-- Include Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="Images/StarBurst.png" type="image/png">
-</head>
-
-  <!-- Add a responsive navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="science.html">Research</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="art.html">Art</a>
-      </li>
-    </ul>
-    <a class="navbar-brand ml-auto title" href="#">Taro Spirig</a>
-  </nav>
-
-<div class="container-fluid content">
-
-  <div class="row margins_lr" id="portrait">
-    
-    <h3 id="about">
-      Short CV
-    </h3>
-
-    <p>
-      PhD student at the University of Copenhagen at the centre for the Mathematics of Quantum Theory (<a href="https://qmath.ku.dk">QMATH</a>). I have completed a master's in computational science and engineering at Harvard University and a master's in mathematical and theoretical physics at the university of Oxford.
-      I have received my bachelor's degree in physics from ETH Zürich.
-    </p>
-  </div>
-
-  <hr>
-  <div class="row margins_lr">
-    <h3>
-      Contact
-    </h3>
-  </div>
-
-  <div class="row margins_lr">
-    <p>
-      You can contact me at <a href="mailto:taro.spg@gmail.com" id="email">taro dot spg at gmail dot com </a>.
-    </p>
-  </div>
-
-</div>
-
-<footer>Last update December 2024</footer>
-
   <style>
-
-    .title{
-      color: black !important;
-      font-family: "Arial", sans-serif;
-      font-size: xx-large !important;
+    /* Reset & Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    #about{
-      margin-top: 2em;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+      padding: 1.5rem;
     }
 
-    p{
-      margin: 10px 0 !important;
+    header {
+      margin-bottom: 2rem;
     }
 
-    nav {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    z-index: 2 !important;
+    .site-name {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
     }
 
-    .navbar-light .nav-link {
-    color: black !important;
-    font-family: "Arial", sans-serif;
+    main {
+      /* Removed max-width and centering */
     }
 
-    .content{
-    z-index: 1;
-    color: black !important;
-    font-family: "Arial", sans-serif;
+    section {
+      margin-bottom: 2.5rem;
     }
 
-    .margins_lr{
-      margin-left:3em;
-      margin-right:3em;
+    section h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #444;
+      font-weight: normal;
     }
 
-    .title-margin{
-      margin-top: 5em;
-      margin-bottom:5em;
+    section h3 {
+      font-size: 1rem;
+      margin-bottom: 0.1rem;
+      margin-top: 0.5rem;
+      color: #444;
+      font-weight: normal;
     }
 
-
-    #portrait{
-      margin-top:7em;
+    section p {
+      font-size: 0.9rem;
     }
 
-    footer {
-	  background: #aaa;
-	  color:white;
-	  text-align:center;
-	  margin-top:5em;
-    }
-
-    #email{
+    a{
+      text-decoration: none;
       color: rgb(43, 43, 142);
     }
 
-</style>
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-name">Taro Spirig</div>
+  </header>
+
+  <main>
+    <section id="caveat">
+      <p>
+        This website is under (RE)construction.
+      </p>
+    </section>
+
+    <section id="Science">
+      <h2>Scientific Publications</h2>
+
+
+      <h3>Gap-preserving reductions and RE-completeness of independent set games</h3>
+      <p>
+        With Laura Mančinska, Pieter Spaas, and Matthijs Vernooij.
+      </p>
+      <p>
+        Conference: FOCS 2025. <a href="https://arxiv.org/abs/2505.05253">ArXiv</a>.
+      </p>
+
+
+      <h3>A quantum unique games conjecture</h3>
+      <p>
+        With Hamoon Mousavi.
+      </p>
+      <p>
+        Conference: ITCS 2025, QIP 2025. <a href="https://www.youtube.com/watch?v=QoT7qxoNf8g">Talk</a>. <a href="https://arxiv.org/abs/2409.20028">ArXiv</a>.
+      </p>
+
+
+      <h3>Approximation algorithms for noncommutative constraint satifsaction problems</h3>
+      <p>
+        With Eric Culf and Hamoon Mousavi.
+      </p>
+      <p>
+        Conference: FOCS 2024, QIP 2025. <a href="https://arxiv.org/abs/2312.16765">ArXiv</a>.
+      </p>
+
+
+      <h3>Bootstrapping quantum field theory in Anti-de Sitter (AdS) apace</h3>
+      <p>
+        With Marco Meineri and Joao Penedones.
+      </p>
+      <p>
+        Journal: <a href="https://link.springer.com/article/10.1007/JHEP07(2024)229">JHEP</a>. <a href="https://arxiv.org/abs/2305.11209">ArXiv</a>.
+    </section>
+
+    <section id="Films and installations">
+      <h2>Films and installations</h2>
+
+      <h3>Sun Set Rise</h3>
+      <p>
+        Co-directed with Leo Shearmur. Duration: 36'. Year: 2024. Country: Switzerland.
+      </p>
+      <p>
+        Festival: <a href="https://www.solothurnerfilmtage.ch/de/festival/programm/sun-set-rise">59th Solothurn Film Festival</a>. <a href="https://www.swissfilms.ch/en/movie/sun-set-rise/B94DDA87956343FCBC0112D853D5915C">Swiss films</a>.
+      </p>
+
+
+      <h3>Entrained</h3>
+      <p>
+        Made at MIT Architecture Dept. in Marcelo Coehlo's group. Year: 2022. <a href="./PhotoDigital/ShortVideo.mp4" controls>Video</a>.
+      </p>
+      <p>
+        In nature, entrainment is the phenomenon, where individual agents synchronize their actions. In this installation, smartphones produce repetitive flashes of light and sound at a set frequency. Like fireflies, the devices synchronize their flashes with neighboring phones, eventually aligning
+        to flash at the same frequency. Viewers can disrupt this behavior by touching the phone screens, which increases the flashing frequency.
+      </p>
+    </section>
+
+    <section id="Miscellaneous">
+      <h2>Miscellaneous</h2>
+      <p>
+        Master's thesis on black hole entropy in string theory <a href="./ResearchDoc/Black Hole Entropy in String Theory - MSc Dissertation - Taro Spirig.pdf">MScThesis</a></p>
+      </p>
+      <p>
+        Bachelor's thesis on geometric quantisation <a href="./ResearchDoc/BachelorThesis_GeometricQuantisation_TaroSpirig.pdf">BScThesis.pdf</a>
+      </p>
+    </section>
+
+    <section id="Short CV">
+      <h2>Short CV</h2>
+      <p>
+        BSc Physics, ETH Zürich. MSc Mathematical and Theoretical Physics, Oxford University. MSc Computational Sciences and Engineering, Harvard Univesity. Researcher in mathematics (PhD candidate), University of Copenhagen. Current: MFA, Royal Danish Academy of Arts.
+      </p>
+    </section>
+
+    <section id="Contact">
+      <h3>Contact</h3>
+        <p>
+          You can contact me <a href="mailto:taro.spg@gmail.com" id="email">via</a>.
+        </p>
+    </section>
+  </main>
+
+</body>
+</html>
